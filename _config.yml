@@ -1,0 +1,27 @@
+# Jekyll configuration to exclude node_modules and prevent Liquid errors
+exclude:
+  - node_modules
+  - "**/node_modules"
+  - "**/node_modules/**"
+  - "Server/node_modules"
+  - "Server/node_modules"
+  - "Client/node_modules"
+  - "Client/node_modules/**"
+  - package.json
+  - package-lock.json
+  - .git
+  - .gitignore
+  - README.md
+  - CHANGELOG.md
+  - "**/README.md"
+  - "**/CHANGELOG.md"
+
+# Only include specific directories (empty means include everything except excluded)
+include: []
+
+# Safe mode to prevent arbitrary code execution
+safe: true
+
+# Disable markdown processing
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
