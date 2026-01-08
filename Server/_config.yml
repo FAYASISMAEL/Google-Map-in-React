@@ -1,0 +1,8 @@
+# Jekyll configuration to exclude node_modules from processing
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - "*.md"
+  - "*.json"
+
